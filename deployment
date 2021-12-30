@@ -1,0 +1,5 @@
+./mvnw package
+sudo heroku login
+sudo heroku container:login
+sudo heroku container:push web --app spring-mongodb
+sudo heroku container:release web --app spring-mongodb
